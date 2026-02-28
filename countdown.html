@@ -88,7 +88,7 @@
 				document.getElementById('timer-minutes').innerHTML = Math.floor(minutesLeft % 60);
 				document.getElementById('timer-seconds').innerHTML = Math.floor(secondsLeft % 60);
 			} else {
-				document.getElementById('label').innerHTML = 'This article is now eligible for deletion.'
+				document.getElementById('label').innerHTML = '此页面已可被删除'
 				document.getElementById('timer-days').innerHTML = '--'
 				document.getElementById('timer-hours').innerHTML = '--'
 				document.getElementById('timer-minutes').innerHTML = '--'
@@ -104,7 +104,7 @@
 <body>
 	<div id="container">
 		<img src="header2.png" width=200px align=center alt="RPC Authority" style="margin-bottom: 10px;"><br>
-		<span id="label">This article has reached the deletion threshold and will be eligible for deletion in:</span>
+		<span id="label">此页面可在倒计时结束后被删除</span>
 		<div id="timer">
 			<div id="timer-days"></div><div id="timer-hours"></div><div id="timer-minutes"></div><div id="timer-seconds"></div>
 			<div class="timer-label" style="grid-column: 1 / 2">Days</div>
@@ -116,3 +116,4 @@
 </body>
 
 </html>
+
